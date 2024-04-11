@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shopping Cart</title>
+
+    <!-- Icon Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    
+    <link rel="stylesheet" href="src/Style.css">
+    <link rel = "stylesheet" href = "src/cartStyle.css">
+    
+
+
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        
+
+       
+
+        <header class="header" style = "background-color: black;">
+		 
+            <a href="Home.html" class="logo"><img src = "Images/Logo.png"></a>
+            
+            <nav class="navbar">
+                <ul style = "display:flex">
+                    <li> <a href="Home.html"><b>Home</b></a></li>
+                    <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
+                    <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
+                    <li> <a href="Hostels.html"><b>Hostels</b></a></li>
+                    <li> <a href="NightLife.html"><b>Night life</b></a> </li>
+                    <li> <a href="Shop.html"><b>Shop</b></a></li>
+                    <li>   <div class="cartIcon">
+                        <a href = "Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            <div id = "cartAmount" class = "cartAmount" > 0</div>
+                            
+                    </div></li>
+                </ul>
+        </nav>
+        </header>
+
+        <div class="cart" style = "padding-top:170px;">
+            <div class="itemsListed" id = "itemsListed">
+                <div id="cart-title" class="cart-title"></div>
+
+                <div class="shopping-cart" id="shopping-cart"></div>
+
+                <div id="label" class="text-center" ></div>
+
+               
+
+            </div>
+
+          
+        </div>
+
+        <div style = "background-color: rgb(119, 119, 119);">  <br><br><br> <br><br><br></div>
+
+   
+
+       
+
+
+   
+
+    <footer style = "grid-column: span 6; ">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+    
+        <div class="footerLinks" >
+            <p> Transportation Links</p>
+    
+            <ul id="transport" style = "text-decoration: none;">
+    
+                <li> <a href = "https://www.buseireann.ie/" target = "_blank"> Bus Éireann </a></li>
+                <li> <a href = "https://www.irishrail.ie/en-ie/" target = "_blank"> Iarnród Éireann </a></li>
+                <li> <a href = "https://www.citylink.ie/" target = "_blank"> City Link </a></li>
+    
+            </ul>
+    
+    
+        </div>
+    
+        <div class="footerLinks">
+            <p> Website Pages</p>
+    
+            <ul id="pages">
+    
+                <li> <a href = "Home.html"> Home </a> </li>
+                <li> <a href = "StudentAccommodation.html"> Student Accommodation </a> </li>
+                <li> <a href = "Hostels.html"> Hostels </a> </li>
+                <li> <a href = "Hotels.html"> Hotels </a> </li>
+                <li> <a href = "NightLife.html"> Night Life </a> </li>
+                <li> <a href = "Shop.html"> Shop </a></li>
+                <li> <a href = "ShoppingBasket.html"> Shopping Basket </a> </li>
+               
+    
+    
+            </ul>
+    
+    
+        </div>
+    
+        
+        
+        
+        <div class="footerLinks">
+            <p> Contact</p>
+    
+            <ul id="useful">
+                
+                <li><i class="fa-solid fa-envelope"></i> &nbsp; Email Us </li>
+                <li><i class="fa-solid fa-phone"></i> &nbsp; Call us  </li>
+                
+                
+    
+            </ul>
+            
+            
+    
+    
+        </div>
+        
+        <span> </span>
+        
+        
+        <div class = "social">
+        
+        <ul>
+        <p> Follow Us </p>
+            <li> <a href="#" target = "_blank" class="fa fa-facebook"></a></li>
+            <li> <a href="#" target = "_blank" class="fa fa-instagram"></a></li>
+            <li> <a href="#" target = "_blank" class="fa fa-twitter"></a></li>
+            <li> <a href="#" target = "_blank"class="fa fa-snapchat"></a></li>
+    
+        </ul>
+        </div>
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+    </footer>
+
+</div>
+
+
+</body>
+
+<script src="src/Data.js"></script>
+<script src="src/cart.js"></script>
+</html>

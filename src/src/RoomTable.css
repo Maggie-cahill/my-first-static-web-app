@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+.table table {
+    width: 100%;
+}
+
+
+.table td {
+    width: 300px;
+    margin: 10px;
+}
+
+
+
+.table3 td {
+    width: 300px;
+    margin: 10px;
+}
+
+
+
+tr {
+    width: 100%;
+}
+
+table {
+    
+    table-layout:fixed;
+    height: 500px;
+    border-spacing: 30px;
+}
+
+.cell img {
+    height: 300px;
+    width:101%;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+
+td div {
+    border: 3px solid black;
+    position: relative;
+    padding: 0;
+    height:300px;
+    overflow: hidden;
+    box-shadow: 2px 1px 6px black;
+    transition: box-shadow .3s ease;
+}
+
+td div:hover {
+    box-shadow: 0px 0px 10px rgb(255, 234, 0);
+}
+
+.c4 div {
+    width: 453px;
+ 
+}
+
+td p {
+    position: absolute;
+    bottom: -15px;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    line-height: 35px;
+    border: 0px solid white;
+    border-top-right-radius: 10px;
+    
+}
+
+.c2 p {
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.c5 p {
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+td ul {
+    position: absolute;
+    width: 140px;
+    background-color: rgba(255,255,255,0.8);
+    border-left: 2px solid black;
+    font-weight: 600;
+    font-family: poppins;
+    font-size: .75em;
+    padding-left: 10px;
+    padding-top: 15px;
+    line-height: 20px;
+    padding-right: 15px;
+    top: -17px;
+    right: -180px;
+    height: 120%;  
+    transition: right .5s linear; 
+    list-style-position: inside
+}
+
+.c1 ul {
+    padding-top: 40px;
+}
+
+.table2 .c1 ul {
+    padding-top: 50px;
+    width: 170px;
+}
+
+.table3 .c1 ul {
+    padding-top: 50px;
+    width: 170px;
+}
+
+.table2 .c1 ul li{
+    margin-bottom: 15px;
+}
+
+.c2 ul {
+    padding-right: 10px;
+    padding-top: 25px;
+    width: 130px;
+}
+
+.table3 .c2 ul {
+    padding-right: 10px;
+    padding-top: 35px;
+    width: 160px;
+}
+
+.c3 ul {
+    padding-top: 70px;
+    width: 160px;
+}
+
+.table3 .c3 ul {
+    padding-right: 10px;
+    padding-top: 25px;
+    width: 180px;
+}
+
+.c4 ul {
+    padding-top: 30px;
+    width: 180px;
+}
+
+.table2 .c5 ul {
+    padding-top: 30px;
+    padding-right: 10px;
+    width: 180px;
+}
+
+.table3 .c5 ul {
+    padding-top: 30px;
+    padding-right: 10px;
+    width: 180px;
+}
+
+.c5 ul {
+    padding-top: 60px;
+    padding-right: 10px;
+    width: 130px;
+}
+
+.c6 ul {
+    padding-top: 60px;
+    padding-right: 10px;
+    width: 130px;
+}
+
+.table2 .c6 ul {
+    padding-top: 30px;
+    padding-right: 10px;
+    width: 160px;
+}
+
+td ul li {
+    margin-bottom: 7px;
+}
+td div:hover > ul{
+    right: 0px;
+   
+}
+
+.c3 ul{
+    padding-top: 25px;
+}
+
+td span {
+    font-size: 0.75em;
+}
+
+.c1 {
+    width: 100px;
+    height: 300px;
+}
+
+.c1 img {
+    width: 100%;
+    height: 300px;
+}
+
+.c2 img {
+    width: 100%;
+    height: 300px;
+
+}
+
+.c2 {
+    padding: 0;
+    width: 400px;
+    height: 250px;
+}
+
+.c3 img {
+    height: 300px;
+    
+}
+.c3 {
+    width: 385px;
+}
+
+.c3 div {
+    width: 448px;
+}
+
+.c4 {
+    width: 100%;
+}
+
+.c5 div {
+    width: 450px;
+}
+
+
+
