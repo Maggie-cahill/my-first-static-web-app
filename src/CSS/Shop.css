@@ -1,0 +1,400 @@
+
+
+* {
+	box-sizing: border-box;
+	
+}
+
+
+
+
+/* Grid */
+
+.container {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 100%;
+	
+	
+}
+
+.header img {
+	height: 100px;
+	width: 120px;
+	padding: 0;
+	border: 3px solid white;
+	border-radius: 50%;
+}
+.headImg {
+	
+	grid-column: span 7;
+	margin: 0px;
+	padding: 0px;
+	height: 550px;
+}
+
+.ShopTitle h2{
+    font-size: 3em;
+}
+
+.ShopTitle img {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Shop {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.shopItem {
+    width: 250px;
+    height: 350px;
+    margin: 35px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 5px 6px 15px black;
+}
+
+.shopItem h4 {
+    padding-top: 10px;
+}
+
+.Shop p {
+    padding-top: 15px;
+    font-size: 1.25em;
+}
+
+.itemImage {
+    height: 65%;
+}
+
+.itemImage img {
+    height: 100%;
+    border-bottom: 3px solid black;
+}
+
+
+
+.body {
+	grid-column: span 6;
+    width: 100%;
+	padding: 20px;
+	padding-bottom: 0px;
+	background: linear-gradient(90deg, #3200b0, #7000b5, #0003c7, #1529ff, #069bdb, #27e2ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.container > div {
+		padding: 30px;	
+	
+}
+
+.container > div > div {
+		border: 1px solid black;
+}
+
+
+/* Header */
+
+
+.headImg img {
+	
+	width: 100%;
+	height: 550px;
+	padding: 0;
+	margin: 0;
+
+}
+
+
+
+
+/* Body */
+
+.body > div {
+	background-color: white;
+	padding: 15px;
+}
+
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  
+}
+
+
+h2 {
+	
+	 font-family: "Exo 2", sans-serif;
+	 font-weight: 400;
+	 font-style: normal;
+}
+
+p {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 30px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?familly=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+footer{
+    position: relative;
+    grid-column: span 6;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+  
+    flex-wrap:wrap;
+    flex-direction: row;
+	
+	
+
+    
+}
+
+footer .social_icon, 
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: none;
+}
+
+footer .social_icon li, 
+footer .menu li{
+    list-style: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave{
+
+    0%{
+        background-position: 1000px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
+@keyframes animateWave_02{
+
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
+
+
+
+
+
+.footerLinks  ul {
+	list-style: none;
+	
+}
+
+
+.footerLinks {
+    padding-bottom: 50px;
+    padding-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+    
+}
+
+
+
+
+footer li  {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 40px;
+	
+
+}
+
+footer li a {
+	text-decoration:none;
+    list-style-type:none;
+	color: white;
+	
+}
+
+footer li a:hover{
+	color: lightblue;
+}
+
+
+
+footer .social ul li{
+
+	display: inline;
+	letter-spacing: 10px;
+	font-size: 30px;
+	padding: 5px;
+	
+	
+}
+
+
+
+footer .social ul li a:hover {
+	color: gold;
+}
+
+
+
+
+
+footer .social p {
+	font-size: 20px;
+	line-height: 35px;
+	
+}
+
+footer p {
+	font-family: "Exo 2", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-style: normal;
+	padding-bottom: 10px;
+	
+}
+
+footer span {
+	margin-top: 10px;
+	grid-column: span 3;
+	border-top: 1px solid white;
+	display: inline-block;
+	width: 100%;
+	padding-top: 20px;
+	
+}
