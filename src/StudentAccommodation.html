@@ -12,13 +12,14 @@
 	
 
 	<!-- Custom CSS -->
-	<link href = "src/Style.css" rel = "stylesheet">
-	<link href="src/StudentAccommodation.css" rel="stylesheet" />
-	<link href="src/navbar1.css" rel="stylesheet" >
-	<link href="src/Collage.css" rel="stylesheet" />
-	<link href="src/HeaderImage.css" rel="stylesheet" />
-	<link href = "src/RoomTable.css" rel = "stylesheet">
-	<link href = "src/footer.css" rel = "stylesheet">
+	<link href = "CSS/Style.css" rel = "stylesheet">
+	<link href="CSS/StudentAccommodation.css" rel="stylesheet" />
+	<link href="CSS/navbar1.css" rel="stylesheet" >
+	<link href="CSS/Collage.css" rel="stylesheet" />
+	<link href="CSS/HeaderImage.css" rel="stylesheet" />
+	<link href = "CSS/RoomTable.css" rel = "stylesheet">
+	<link href = "CSS/footer.css" rel = "stylesheet">
+	<link rel="stylesheet" href="footer/footer.css">
 
 
 
@@ -47,27 +48,25 @@
 	 
     <div class="container">
 	
-         <header class="header">
+        <header class="header">
 		 
-            <a href="Home.html" class="logo"><img src = "Images/Logo.png"></a>
+            <a href="index.html" class="logo" id = "logo" onmousemove = "activateLogo()" onmouseout = "deactivateLogo()">  <img src = "Images/Logo2.png"> </a>
             
             <nav class="navbar">
                 <ul style = "display:flex">
-					<li> <a href="Home.html"><b>Home</b></a></li>
-					<li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
-					<li> <a href="Hotels.html"><b>Hotels</b></a> </li>
-					<li> <a href="Hostels.html"><b>Hostels</b></a></li>
-					<li> <a href="NightLife.html"><b>Night life</b></a> </li>
-					<li> <a href="Shop.html"><b>Shop</b></a></li>
-					<li>   <div class="cartIcon">
-						<a href = "Cart.html"><i class="fas fa-shopping-cart"></i></a>
-							<div id = "cartAmount" class = "cartAmount" > 0</div>
-							
-					</div></li>
-				</ul>
-            </nav>
-			
-			
+                    <li> <a href="index.html"><b>Home</b></a></li>
+                    <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
+                    <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
+                    <li> <a href="Hostels.html"><b>Hostels</b></a></li>
+                    <li> <a href="NightLife.html"><b>Night life</b></a> </li>
+                    <li> <a href="Shop.html"><b>Shop</b></a></li>
+                    <li>   <div class="cartIcon">
+                        <a href = "Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            <div id = "cartAmount" class = "cartAmount" > 0</div>
+                            
+                    </div></li>
+                </ul>
+        </nav>
         </header>
 			
 		
@@ -1076,88 +1075,32 @@
    
 
 
-
-<footer style = "grid-column: span 6; ">
-	<div class="waves">
-		<div class="wave" id="wave1"></div>
-		<div class="wave" id="wave2"></div>
-		<div class="wave" id="wave3"></div>
-		<div class="wave" id="wave4"></div>
-	</div>
-
-	<div class="footerLinks" >
-		<p> Transportation Links</p>
-
-		<ul id="transport" style = "text-decoration: none;">
-
-			<li> <a href = "https://www.buseireann.ie/" target = "_blank"> Bus Éireann </a></li>
-			<li> <a href = "https://www.irishrail.ie/en-ie/" target = "_blank"> Iarnród Éireann </a></li>
-			<li> <a href = "https://www.citylink.ie/" target = "_blank"> City Link </a></li>
-
-		</ul>
-
-
-	</div>
-
-	<div class="footerLinks">
-		<p> Website Pages</p>
-
-		<ul id="pages">
-
-			<li> <a href = "Home.html"> Home </a> </li>
-			<li> <a href = "StudentAccommodation.html"> Student Accommodation </a> </li>
-			<li> <a href = "Hostels.html"> Hostels </a> </li>
-			<li> <a href = "Hotels.html"> Hotels </a> </li>
-			<li> <a href = "NightLife.html"> Night Life </a> </li>
-			<li> <a href = "Shop.html"> Shop </a></li>
-			<li> <a href = "ShoppingBasket.html"> Shopping Basket </a> </li>
-		   
-
-
-		</ul>
-
-
-	</div>
-
-	
-	
-	
-	<div class="footerLinks">
-		<p> Contact</p>
-
-		<ul id="useful">
-			
-			<li><a href="mailto:G00423830@atu.ie"><i class="fa-solid fa-envelope"></i> &nbsp; Email Us </a></li>
-			<li><a href="tel:123-111-2222"><i class="fa-solid fa-phone"></i> &nbsp; Call us </a> </li>
-			
-			
-
-		</ul>
-		
-		
-
-
-	</div>
-	
-	<span> </span>
-	
-	
-	<div class = "social_icon" >
-	
-	<ul>
-	<p> Follow Us </p>
-		<li> <a href="https://www.facebook.com/" target = "_blank" class="fa fa-facebook"></a></li>
-		<li> <a href="https://www.instagram.com/" target = "_blank" class="fa fa-instagram"></a></li>
-		<li> <a href="https://twitter.com/" target = "_blank" class="fa fa-twitter"></a></li>
-		<li> <a href="https://www.snapchat.com/" target = "_blank"class="fa fa-snapchat"></a></li>
-
-	</ul>
-	</div>
-
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="StudentAccommodation.html">Student Accomodation</a></li>
+                <li><a href="Hostels.html">Hostels</a></li>
+                <li><a href="Hotels.html">Hotels</a></li>
+                <li><a href="NightLife.html">Night Life</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+            </ul>
+            <p>©2024 All rights reserved.</p>
+        </footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-	
-</footer>
 
 </div>
 
@@ -1167,8 +1110,9 @@
 </body>
 
 	<!-- JavaScript Files-->
-	<script src="src/Slideshow.js" defer></script>
-	<script src="src/Data.js"></script>
-	<script src="src/ShoppingCartIcon.js"></script>
+	<script src="JS/Slideshow.js" defer></script>
+	<script src="JS/Data.js"></script>
+	<script src="JS/ShoppingCartIcon.js"></script>
+	<script src = "JS/ShoppingCartIcon.js"></script>
 
 </html>

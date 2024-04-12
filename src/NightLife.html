@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galway Student Oasis - Night Life</title>
+<link rel="stylesheet" href="CSS/navbar1.css">
+<link rel="stylesheet" href="CSS/NightLife.css"> 
+<link rel="stylesheet" href="footer/footer.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+
+<style>
+
+</style>
+</head>
+<body>
+
+
+<div class = 'container'>
+
+  <header class="header">
+		 
+    <a href="index.html" class="logo" id = "logo" onmousemove = "activateLogo()" onmouseout = "deactivateLogo()">  <img src = "Images/Logo2.png"> </a>
+    
+    <nav class="navbar">
+        <ul style = "display:flex">
+            <li> <a href="index.html"><b>Home</b></a></li>
+            <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
+            <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
+            <li> <a href="Hostels.html"><b>Hostels</b></a></li>
+            <li> <a href="NightLife.html"><b>Night life</b></a> </li>
+            <li> <a href="Shop.html"><b>Shop</b></a></li>
+            <li>   <div class="cartIcon">
+                <a href = "Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <div id = "cartAmount" class = "cartAmount" > 0</div>
+                    
+            </div></li>
+        </ul>
+</nav>
+</header>
+
+
+<h1>Seven</h1>
+
+<a href="https://sevenbridgestreet.ie/"><div class="parallax1"></div></a>
+
+
+
+
+<div>
+ 
+			<p class="box">Seven is an infamous cocktail bar which is right in the city
+               center. The cocktails taste amazing and the enviornment is <br>
+				astouding. The light is not harsh and there's plenty of 
+				comfortable booths to sit around with your friend's on a night out!<br>
+				In our opinion it is one of the nicest bars to go to with your 
+				friends.</p>
+</div>
+<h2> Buskers</h2>
+<a href="https://www.buskerbrownes.com/"><div class="parallax2"></div></a>
+
+<div>
+
+				<p class="box">Busker Brownes is the main bar that everyone goes to. 
+               It is packed almost every night as it is I think almost every <br>
+				students favourite bar. It has good music, good drinks, and fun company. 
+				If you want to meet lots of fun people and have an overall great night<br>
+				this is the place to be.</p>
+</div>
+<h3>Skeff</h3>
+<a href="https://www.theskeff.ie"><div class="parallax3"></div></a>
+
+<div>
+
+				<p class="box">The Skeff in Galway City serves nice cocktails and  
+               has a great atmosphere with live music. Theres three bars with three <br>
+				floors and a large smoking area. They serve decent food and are open until 
+				around 2am. Located right in Eyre Square the heart of Galway City. <br>
+				Buses run until around half 11pm so if you live somewhere not directly  
+				in the city you would be able to have a nice time and still catch the last bus :)</p>
+</div>
+<h4>An Púcán</h4>   
+<a href="https://anpucan.ie"><div class="parallax4"></div></a>
+
+<div>
+
+				<p class="box">An Púcán is a lovely and fancy bar right in the center of Galway City.
+               It has an outdoor/indoor smoking area with fake grass covering the floor. <br>
+				It is a bit pricey so beware but the enviornment is beautiful and 
+				definetly worth a visit!</p>
+
+</div>
+<h5>Monroes</h5>
+<a href="https://monroes.ie"><div class="parallax5"></div></a>
+
+<div>
+
+				<p class="box">Monroes is a restaurant/bar, it has a good selection of 
+               food with fast and good service. They have live music as entertainment and they <br>
+				also serve coffee. The drinks are good with reasonable prices, 
+				just make sure to chose seats carefully as some tables and chairs are <br>
+				moved later on in the evening so that people are able to comfortably order drinks <br>
+				from the bar. Open fire and comfortable enviornment definetly worth a visit!</p>
+</div>
+<h6>MP Walsh</h6>
+<a href="https://mpwalsh.ie"> <div class="parallax6"></div></a>
+
+<div>
+	
+				<p class="box">M.P Walsh is a traditional Irish Bar with a warm 
+               and welcoming atmosphere situated in the heart of Galway. Serves great <br>
+				cocktails and has live music for you to enjoy, the staff is impeccable
+				as they are helpful and friendly. Great tourist spot with a lovely <br>
+				Irish whiskey selection. I personally think it is a great place to  
+				go with a couple of your buddies for a nice night. Definetly recommend going at least once!</p>
+</div>
+<div class="slideshow-container">
+<h6>Other Options</h6>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="Images/frontDoor.jpg" style="width:100%">
+  <div class="text">The Front Door</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="Images/McGettigans.jpg" style="width:100%">
+  <div class="text">McGettigans</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Images/merlin.jpg" style="width:100%">
+  <div class="text">Merlins</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="Images/kingshead.jpg" style="width:100%">
+  <div class="text">The Kings Head</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="Images/sult.jpg" style="width:100%">
+  <div class="text">Sult</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</div>
+
+<div id="map"></div>
+
+<footer>
+  <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social_icon">
+      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="#"></a></li>
+  </ul>
+  <ul class="menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="StudentAccommodation.html">Student Accomodation</a></li>
+      <li><a href="Hostels.html">Hostels</a></li>
+      <li><a href="Hotels.html">Hotels</a></li>
+      <li><a href="NightLife.html">Night Life</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+  </ul>
+  <p>©2024 All rights reserved.</p>
+</footer>
+
+</div>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+var map = L.map('map').setView([53.274345, -9.049228], 13);
+
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Markers with popups
+var marker1 = L.marker([53.27123931299862, -9.057262172461018]).addTo(map);
+marker1.bindPopup("<b>MP Walsh</b>").openPopup();
+
+var marker2 = L.marker([53.270297740695284, -9.057974452698224]).addTo(map);
+marker2.bindPopup("<b>Monroes</b>").openPopup();
+
+var marker3 = L.marker([53.272265211564644, -9.055033560615568]).addTo(map);
+marker3.bindPopup("<b>Seven</b>").openPopup();
+
+var marker4 = L.marker([53.27184634972663, -9.054390755816794]).addTo(map);
+marker4.bindPopup("<b>Buskers</b>").openPopup();
+
+var marker5 = L.marker([53.27465157421514, -9.050273052690867]).addTo(map);
+marker5.bindPopup("<b>Skeff</b>").openPopup();
+
+var marker6 = L.marker([53.2748973952875, -9.04747709130377]).addTo(map);
+marker6.bindPopup("<b>An Púcán</b>").openPopup();
+
+var marker7 = L.marker([53.27193613861541, -9.053864709777095]).addTo(map);
+marker7.bindPopup("<b>The Front Door</b>").openPopup();
+
+var marker8 = L.marker([53.27580236304567, -9.049382522037192]).addTo(map);
+marker8.bindPopup("<b>McGettigans</b>").openPopup();
+
+var marker9 = L.marker([53.27640488171909, -9.00362520664769]).addTo(map);
+marker9.bindPopup("<b>Merlins</b>").openPopup();
+
+var marker10 = L.marker([53.27239177542589, -9.053138170589015]).addTo(map);
+marker10.bindPopup("<b>The KingsHead</b>").openPopup();
+
+var marker11 = L.marker([53.27831090402812, -9.058172529911255]).addTo(map);
+marker11.bindPopup("<b>Sult</b>").openPopup();
+</script>
+
+
+        
+        <script src = "JS/ShoppingCartIcon.js"></script>
+
+</html>

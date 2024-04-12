@@ -11,9 +11,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS -->
-    
-    <link rel="stylesheet" href="src/Style.css">
-    <link rel = "stylesheet" href = "src/cartStyle.css">
+    <link rel="stylesheet" href="CSS/navbar1.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel = "stylesheet" href = "CSS/cartStyle.css">
+    <link rel="stylesheet" href="footer/footer.css">
+   
+
     
 
 
@@ -32,11 +35,11 @@
 
         <header class="header" style = "background-color: black;">
 		 
-            <a href="Home.html" class="logo"><img src = "Images/Logo.png"></a>
+            <a href="index.html" class="logo" id = "logo" onmousemove = "activateLogo()" onmouseout = "deactivateLogo()">  <img src = "Images/Logo2.png"> </a>
             
             <nav class="navbar">
                 <ul style = "display:flex">
-                    <li> <a href="Home.html"><b>Home</b></a></li>
+                    <li> <a href="index.html"><b>Home</b></a></li>
                     <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
                     <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
                     <li> <a href="Hostels.html"><b>Hostels</b></a></li>
@@ -75,93 +78,41 @@
 
    
 
-    <footer style = "grid-column: span 6; ">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
-    
-        <div class="footerLinks" >
-            <p> Transportation Links</p>
-    
-            <ul id="transport" style = "text-decoration: none;">
-    
-                <li> <a href = "https://www.buseireann.ie/" target = "_blank"> Bus Éireann </a></li>
-                <li> <a href = "https://www.irishrail.ie/en-ie/" target = "_blank"> Iarnród Éireann </a></li>
-                <li> <a href = "https://www.citylink.ie/" target = "_blank"> City Link </a></li>
-    
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"></a></li>
             </ul>
-    
-    
-        </div>
-    
-        <div class="footerLinks">
-            <p> Website Pages</p>
-    
-            <ul id="pages">
-    
-                <li> <a href = "Home.html"> Home </a> </li>
-                <li> <a href = "StudentAccommodation.html"> Student Accommodation </a> </li>
-                <li> <a href = "Hostels.html"> Hostels </a> </li>
-                <li> <a href = "Hotels.html"> Hotels </a> </li>
-                <li> <a href = "NightLife.html"> Night Life </a> </li>
-                <li> <a href = "Shop.html"> Shop </a></li>
-                <li> <a href = "ShoppingBasket.html"> Shopping Basket </a> </li>
-               
-    
-    
+            <ul class="menu">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="StudentAccommodation.html">Student Accomodation</a></li>
+                <li><a href="Hostels.html">Hostels</a></li>
+                <li><a href="Hotels.html">Hotels</a></li>
+                <li><a href="NightLife.html">Night Life</a></li>
+                <li><a href="Shop.html">Shop</a></li>
             </ul>
-    
-    
-        </div>
-    
-        
-        
-        
-        <div class="footerLinks">
-            <p> Contact</p>
-    
-            <ul id="useful">
-                
-                <li><i class="fa-solid fa-envelope"></i> &nbsp; Email Us </li>
-                <li><i class="fa-solid fa-phone"></i> &nbsp; Call us  </li>
-                
-                
-    
-            </ul>
-            
-            
-    
-    
-        </div>
-        
-        <span> </span>
-        
-        
-        <div class = "social">
-        
-        <ul>
-        <p> Follow Us </p>
-            <li> <a href="#" target = "_blank" class="fa fa-facebook"></a></li>
-            <li> <a href="#" target = "_blank" class="fa fa-instagram"></a></li>
-            <li> <a href="#" target = "_blank" class="fa fa-twitter"></a></li>
-            <li> <a href="#" target = "_blank"class="fa fa-snapchat"></a></li>
-    
-        </ul>
-        </div>
-    
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        
-    </footer>
+            <p>©2024 All rights reserved.</p>
+        </footer>
 
 </div>
 
 
 </body>
 
-<script src="src/Data.js"></script>
-<script src="src/cart.js"></script>
+<script src="JS/Data.js"></script>
+<script src="JS/cart.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
 </html>
