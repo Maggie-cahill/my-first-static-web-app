@@ -15,7 +15,7 @@ body{
     background: #333;
 }
 
-footer{
+footer {
     position: relative;
     width: 100%;
     background: #3586ff;
@@ -27,8 +27,8 @@ footer{
     flex-direction: column;
 }
 
-footer .social_icon, 
-footer .menu{
+ 
+footer .social_icon, footer .menu{
     position: relative;
     display: flex;
     justify-content: center;
@@ -37,9 +37,12 @@ footer .menu{
     flex-wrap: none;
 }
 
+
+
 footer .social_icon li, 
 footer .menu li{
     list-style: none;
+    display: inline;
 }
 
 footer .social_icon li a{
@@ -52,7 +55,12 @@ footer .social_icon li a{
 
 footer .social_icon li a:hover{
     transform: translateY(-10px);
+    color: white;
 
+}
+
+footer .fa-envelope:hover, footer .fa-phone:hover {
+    color: white;
 }
 
 footer .menu li a{
@@ -83,7 +91,7 @@ footer .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(wave.png);
+    background: url(../footer/wave.png);
     background-size: 1000px 100px;
 
 }
@@ -131,3 +139,5 @@ footer .wave#wave4{
         background-position: 1000px;
     }
 }
+
+
