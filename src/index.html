@@ -10,16 +10,16 @@
 	
 
 	<!-- Custom CSS -->
-    <link href="/css/Index.css" rel="stylesheet" />
-	<link href="/css/navbar.css" rel="stylesheet" >
-    <link href="/css/footer.css" rel="stylesheet">
+    <link href="CSS/Index.css" rel="stylesheet" />
+	<link href="CSS/navbar1.css" rel="stylesheet" >
+    <link href="CSS/footer.css" rel="stylesheet">
 
 	<!-- Linked CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- JavaScript Files-->
-	<script src="Slideshow.js" defer></script>
+	<script src="JS/Slideshow.js" defer></script>
 
 	<!-- External Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,24 +34,44 @@
 	
 	
 </head>
+	
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0J36QQZ623"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0J36QQZ623');
+</script>
 <body>
 
     <!--Nav bar-->
-    <header class="header">
 
-        <video autoplay muted loop src="img/logoanimation.mp4" width="300px" height="200px"></video>
+       
+    
+    <header class="header">
+		 
+        <a href="index.html" class="logo" id = "logo" onmousemove = "activateLogo()" onmouseout = "deactivateLogo()">  <img src = "Images/Logo2.png"> </a>
         
         <nav class="navbar">
-            <a href="Home.html"><b>Home</b></a>
-            <a href="StudentAccommodation.html"><b>Student Accommodation</b></a>
-            <a href="Hotels.html"><b>Hotels</b></a>
-            <a href="Hostels.html"><b>Hostels</b></a>
-            <a href="NightLife.html"><b>Night life</b></a>
-            <a href="Shop.html"><b>Shop</b></a>
-        </nav>
-        
-        
+            <ul style = "display:flex">
+                <li> <a href="index.html"><b>Home</b></a></li>
+                <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
+                <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
+                <li> <a href="Hostels.html"><b>Hostels</b></a></li>
+                <li> <a href="NightLife.html"><b>Night life</b></a> </li>
+                <li> <a href="Shop.html"><b>Shop</b></a></li>
+                <li>   <div class="cartIcon">
+                    <a href = "Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <div id = "cartAmount" class = "cartAmount" > 0</div>
+                        
+                </div></li>
+            </ul>
+    </nav>
     </header>
+        
+     
 
     <!--video-->
     <video id="video" width="320" height="240" controls>
@@ -93,4 +113,5 @@
 
 </body>
 
+<script src = "JS/ShoppingCartIcon.js"></script>
 </html>

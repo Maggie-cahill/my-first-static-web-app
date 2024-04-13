@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galway Student Oasis - Hotels</title>
+
+    <link rel="stylesheet" href="CSS/Hotels.css"> 
+    <link rel="stylesheet" href="CSS/navbar1.css">
+
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+ 
+	
+</head>
+	
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0J36QQZ623"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0J36QQZ623');
+</script>
+
+	
+<body>
+
+  <header class="header">
+		 
+    <a href="index.html" class="logo" id = "logo" onmousemove = "activateLogo()" onmouseout = "deactivateLogo()">  <img src = "Images/Logo2.png"> </a>
+    
+    <nav class="navbar">
+        <ul style = "display:flex">
+            <li> <a href="index.html"><b>Home</b></a></li>
+            <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
+            <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
+            <li> <a href="Hostels.html"><b>Hostels</b></a></li>
+            <li> <a href="NightLife.html"><b>Night life</b></a> </li>
+            <li> <a href="Shop.html"><b>Shop</b></a></li>
+            <li>   <div class="cartIcon">
+                <a href = "Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <div id = "cartAmount" class = "cartAmount" > 0</div>
+                    
+            </div></li>
+        </ul>
+</nav>
+</header>
+
+
+		<div class="container"> <br> <br> <br>
+		        <h1>Black Cat</h1>
+				<p >179 Upper Salthill, Salthill, Galway, Ireland</p>
+        <div class="image-container" id="image-container1">
+           <a href="https://www.booking.com/Share-14U74B"> <img src="Images/blackcat3.jpg" alt="Image 1"  ></a>
+			<p>The Black cat is a lovely hotel in the center of Salthill.<br>
+			   The size of the accomodation brings a homey feel to it.  This is <br>
+				what the double room looks like, and as you can see even though<br>
+                it is not much in size, it is still spectacular. 				</p>
+			<a href="https://www.booking.com/Share-14U74B"><img src="Images/blackcat4.jpg" alt="Image 2" ></a>
+			<p>For an accomodation that is in the center of a very popular<br> 
+			location to visit, the price could not be any better,<br>
+			Which is why it is first on our list to recommend to students.</p>
+			<a href="https://www.booking.com/Share-14U74B"><img src="Images/blackcat5.jpg" alt="Image 3" ></a>
+			<p>Each room comes with a private bathroom, which is <br>
+			fairly spacious. They are beautiful from the tiles to <br>
+			the layout and use of space.</p>
+			<table class="table" border="1"> 
+  <thead>
+    <tr>
+      <th> Room Type </th>
+      <th> Number of guests </th>
+      <th> Price </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Single Room </td>
+      <td> 1 </td>
+	  <td> 80 euro </td>
+   
+	  
+    </tr>
+    <tr>
+      <td> Small Double Room </td>
+      <td> 1 </td>
+      <td> 110 euro </td>
+	  
+    </tr>
+    <tr>
+      <td> Small Double Room </td>
+      <td> 2</td>
+      <td> 120 euro </td>
+	  
+    </tr>
+  </tbody>
+</table>
+        </div>
+		<h2>Menlo Park Hotel</h2>
+		<p>Headford Road, Galway, Ireland</p>
+        <div class="image-container" id="image-container2">
+            <a href="https://www.menloparkhotel.com/"><img src="Images/menloparkhotel.jpg" alt="Image 4" ></a>
+			<p>The Menlo Park Hotel is a beautiful hotel, <br>
+			which is located only 2km outside of the city center<br>
+			(6 minute drive or 28 minute walk)</p>
+			<a href="https://www.menloparkhotel.com/"><img src="Images/menloparkhotel7.jpg" alt="Image 5" ></a>
+			<p>It is a medium sized hotel which is made from <br>
+			cobbelstone, which gives the hotel a beautiful atmosphere.</p>
+			<a href="https://www.menloparkhotel.com/"><img src="Images/menloparkhotel6.jpg" alt="Image 6" ></a>
+			<p>All rooms have a beautiful en-suite and some have<br>
+			an absolutely stunning deep oval tub. The perfect place to relax<br>
+			while on a vacation in Galway.</p>
+						
+						<table class="table" border="1"> 
+  <thead>
+    <tr>
+      <th> Room Type </th>
+      <th> Number of guests </th>
+      <th> Price </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Classic Single Room </td>
+      <td> 1 </td>
+	  <td> 114 - 135 euro </td>
+   
+	  
+    </tr>
+    <tr>
+      <td> Classic Twin Room </td>
+      <td> 2 </td>
+      <td> 120 - 150 euro </td>
+	  
+    </tr>
+    <tr>
+      <td> Classic Double Room </td>
+      <td> 2 </td>
+      <td> 120 - 150 euro </td>
+	  
+    </tr>
+	
+	 <tr>
+      <td> King Room </td>
+      <td> 2 </td>
+      <td> 183 euro </td>
+	  
+    </tr>
+	
+	 <tr>
+      <td> Suite with City View </td>
+      <td> 2 </td>
+      <td> 287 euro </td>
+	  
+    </tr>
+	
+	 <tr>
+      <td> Family Room (2 Adults + 1 Child) </td>
+      <td> 3 </td>
+      <td> 158 - 188 euro </td>
+	  
+    </tr>
+  </tbody>
+</table>
+        </div>
+		<h3>Nox Hotel Galway</h3>
+		<p>Headford Rd, Galway, Ireland</p>
+        <div class="image-container" id="image-container3">
+            <a href="https://www.noxhotelgalway.ie/"><img src="Images/noxhotelgalway1.jpg" alt="Image 7" ></a>
+			<p>The Nox Hotel has a modern architecture with the base <br>
+			colours white and blue. It is a classic and expresses <br>
+			the heart of Galway with it's colour scheme.</p>
+			<a href="https://www.noxhotelgalway.ie/"><img src="Images/noxhotelgalway3.jpg" alt="Image 8" ></a>
+			<p>The location of this hotel is also great as it is only <br>
+			2km from the city center.(5min drive or 27 minute walk).</p>
+			<a href="https://www.noxhotelgalway.ie/"><img src="Images/noxhotelgalway5.jpg" alt="Image 9" ></a>
+			<p>The hotel rooms themselves are in pristine condition <br>
+			with a classic colour scheme of gold and white. </p>
+									
+						<table class="table" border="1"> 
+  <thead>
+    <tr>
+      <th> Room Type </th>
+      <th> Number of guests </th>
+      <th> Price </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Twin Room </td>
+      <td> 2 </td>
+	  <td> 119 - 143 euro </td>
+   
+	  
+    </tr>
+    <tr>
+      <td> Double Room </td>
+      <td> 2 </td>
+      <td> 119 - 143 euro </td>
+	  
+    </tr>
+	
+	 <tr>
+      <td> King Room </td>
+      <td> 2 </td>
+      <td> 139 - 163 euro </td>
+	  
+    </tr>
+	
+	 <tr>
+      <td> Triple Room </td>
+      <td> 3 </td>
+      <td> 169 - 219 euro </td>
+	  
+    </tr>
+  </tbody>
+</table>
+        </div>
+		<h4>Imperial Hotel</h4>
+		<p>Eyre Square, Galway, Ireland</p>
+        <div class="image-container" id="image-container4">
+            <a href="https://www.imperialhotelgalway.ie/"><img src="Images/imperialhotel1.jpg" alt="Image 10" ></a>
+			<p>The Imperial Hotel has a beautiful classic colour <br>
+			scheme of grey and white. Their is a restaurant and bar <br>
+			on premises for a fun night close to your room.</p>
+			<a href="https://www.imperialhotelgalway.ie/"><img src="Images/imperialhotel2.jpg" alt="Image 11" ></a>
+			<p>The en-suite comes with a pannel floor, a tub, <br>
+			and a shower. With a pure white classic colour scheme it <br>
+			it is the perfect place for a long stay.</p>
+			<a href="https://www.imperialhotelgalway.ie/"><img src="Images/imperialhotel3.jpg" alt="Image 12" ></a>
+			<p>The hotel is based in the city center which is a perfect location for exploring <br>
+			 and also for going to college as it is close by to the large<br>
+			  colleges.</p>
+			  
+			  						<table class="table" border="1"> 
+  <thead>
+    <tr>
+      <th> Room Type </th>
+      <th> Number of guests </th>
+      <th> Price </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Single Room </td>
+      <td> 1 </td>
+	  <td> 114 - 129 euro </td>
+   
+	  
+    </tr>
+    <tr>
+      <td> Double Room </td>
+      <td> 2 </td>
+      <td> 114 - 143 euro </td>
+	  
+    </tr>
+	
+	
+	 <tr>
+      <td> Triple Room </td>
+      <td> 3 </td>
+      <td> 154 - 198 euro </td>
+	  
+    </tr>
+  </tbody>
+</table>
+        </div>
+		<h5>Thirteen on the Green</h5>
+		<p>Eyre Square, Galway, Ireland</p>
+        <div class="image-container" id="image-container5">
+            <a href="https://13onthegreen.ie/"><img src="Images/13.jpg" alt="Image 13" ></a>
+			<p>Thirteen on the Green is a great place to stay at <br>
+			especially if you like going for drinks and don't mind noise <br>
+			late at night as this hotel is based right above a hotel!.</p>
+			<a href="https://13onthegreen.ie/"><img src="Images/131.jpg" alt="Image 14" ></a>
+			<p>The hotel is based right in the city center.<br>
+			So once again it is a great location for exploring and <br>
+			if you are planning a long stay while looking for permanent <br>
+			student accomodation</p>
+			<a href="https://13onthegreen.ie/"><img src="Images/132.jpg" alt="Image 15" ></a>
+			
+		<table class="table" border="1"> 
+  <thead>
+    <tr>
+      <th> Room Type </th>
+      <th> Number of guests </th>
+      <th> Price </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Standard Single Room with Shower </td>
+      <td> 1 </td>
+	  <td> 130 euro </td>
+   
+	  
+    </tr>
+    <tr>
+      <td> Double Room </td>
+      <td> 2 </td>
+      <td> 130 euro </td>
+	  
+    </tr>
+	
+  </tbody>
+</table>
+	<h6>Other Options</h6>
+		<table class="table" border="1"> 
+  <thead>
+    <tr>
+      <th> Closest to city center </th>
+      <th> Lowest price </th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> <a href="https://www.skeffington.ie/">Skeffington Arms Hotel</a> </td>
+      <td> <a href="https://www.booking.com/hotel/ie/avalon-house-galway.en-gb.html?aid=1181029&label=msn--79920883943614%3Atidat-2331720565467515%3Aaud-816715537%3Aloc-92%3Aneo%3Amtb%3Alp142381%3Adec%3Aqsavalon%20house%20galway&sid=24af029bbaf25d7f48c898c83417eb87&dest_id=-1502950;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1711468367;srpvid=dd9e6fa28e7101a6;type=total;ucfs=1&#hotelTmpl">Avalon House </a></td>
+	
+   
+	  
+    </tr>
+    <tr>
+      <td> <a href="https://www.thehardiman.ie/">The Hardiman</a> </td>
+      <td> <a href="https://www.booking.com/hotel/ie/glenarde-house.en-gb.html?aid=2412354&label=metabing-link-propertypromotionadie-hotel-2464823_dev-desktop_los-1_bw-46_dow-6_defdate-1_lang-EN_curr-EUR&sid=24af029bbaf25d7f48c898c83417eb87&all_sr_blocks=246482302_232463645_2_0_0;checkin=2024-05-12;checkout=2024-05-13;dest_id=-1502950;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=246482302_232463645_2_0_0;hpos=1;matching_block_id=246482302_232463645_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=246482302_232463645_2_0_0__11900;srepoch=1711469010;srpvid=036e70e41c7c043f;type=total;ucfs=1&#hotelTmpl">Boutique Guest House</a></td>
+    </tr>
+	
+	  <tr>
+      <td> <a href="https://www.booking.com/hotel/ie/mary-mullens-rooms-eyre-square.en-gb.html?aid=357028&label=bin859jc-1DCAsoaUIebWFyeS1tdWxsZW5zLXJvb21zLWV5cmUtc3F1YXJlSDNYA2hpiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuAKZ14uwBsACAdICJDJiNDg1ZTRmLTVlZDAtNGEwZS05OTJmLWYxZGE1ZWM5NWMyYtgCBOACAQ&sid=24af029bbaf25d7f48c898c83417eb87&dist=0&group_adults=1&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&">Mary Mullen's</a> </td>
+      <td> <a href="https://kilbreehouse.ie/">Kilbree House B&B </a> </td>
+    </tr>
+	
+	  <tr>
+      <td> <a href="https://www.parkhousehotel.ie/">Park House Hotel </a></td>
+      <td> <a href="https://www.thesnugtownhouse.ie/">The Snug Townhouse </a></td>
+    </tr>
+	
+	  <tr>
+      <td><a href="https://victoriahotelgalway.com/"> The Victoria Hotel </a></td>
+      <td> <a href="https://www.travelodge.co.uk/hotels/252/Galway-City-hotel">Travellodge Plus Galway </a></td>
+    </tr>
+	
+	  <tr>
+      <td> <a href="https://www.westernhotelgalway.ie/">The Western </a></td>
+      <td> <a href="https://www.flanneryshotelgalway.com/">Flannery's Hotel </a></td>
+    </tr>
+	
+  </tbody>
+</table>
+			
+        </div>
+		
+		</div>
+		<div id="map"></div>
+		<footer>
+      <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+          <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="#"></a></li>
+      </ul>
+      <ul class="menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="StudentAccommodation.html">Student Accomodation</a></li>
+          <li><a href="Hostels.html">Hostels</a></li>
+          <li><a href="Hotels.html">Hotels</a></li>
+          <li><a href="NightLife.html">Night Life</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+      </ul>
+      <p>©2024 All rights reserved.</p>
+  </footer>
+    <script src="JS/ShoppingCartIcon.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+		<script>
+
+      
+var map = L.map('map').setView([53.274345, -9.049228], 13);
+
+// Add a tile layer (you can use different tile providers)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Add markers with popups
+var marker1 = L.marker([53.260464867719286, -9.075843752716063]).addTo(map);
+marker1.bindPopup("<b>Black Cat</b>").openPopup();
+
+var marker2 = L.marker([53.28801966810803, -9.046495320235111]).addTo(map);
+marker2.bindPopup("<b>Menlo Park Hotel</b>").openPopup();
+
+var marker3 = L.marker([53.286781576889986, -9.041841268510357]).addTo(map);
+marker3.bindPopup("<b>Nox Hotel Galway</b>").openPopup();
+
+var marker4 = L.marker([53.275108631020615, -9.051337029422823]).addTo(map);
+marker4.bindPopup("<b>Imperial Hotel</b>").openPopup();
+
+var marker5 = L.marker([53.27482390932242, -9.047884991304194]).addTo(map);
+marker5.bindPopup("<b>Thirteen on the Green</b>").openPopup();
+
+var marker6 = L.marker([53.274673736762466, -9.04997379130454]).addTo(map);
+marker6.bindPopup("<b>Skeffington Arms Hotel</b>").openPopup();
+
+var marker7 = L.marker([53.274416388328476, -9.048195037344488]).addTo(map);
+marker7.bindPopup("<b>The Hardiman</b>").openPopup();
+
+var marker8 = L.marker([53.276050556584046, -9.048506791301888]).addTo(map);
+marker8.bindPopup("<b>Mary Mullen's</b>").openPopup();
+
+var marker9 = L.marker([53.2751434054878, -9.046747029917272]).addTo(map);
+marker9.bindPopup("<b>Park House Hotel</b>").openPopup();
+
+var marker10 = L.marker([53.2736385138938, -9.047681614573584]).addTo(map);
+marker10.bindPopup("<b>The Victoria Hotel</b>").openPopup();
+
+var marker11 = L.marker([53.27688916161855, -9.047729260607271]).addTo(map);
+marker11.bindPopup("<b>The Western</b>").openPopup();
+
+var marker12 = L.marker([53.27767294142068, -9.041465768032188]).addTo(map);
+marker12.bindPopup("<b>Avalon House</b>").openPopup();
+
+var marker13 = L.marker([53.26885093014719, -9.066610462561833]).addTo(map);
+marker13.bindPopup("<b>Boutique Guest House</b>").openPopup();
+
+var marker14 = L.marker([53.28946352578002, -9.083659752664095]).addTo(map);
+marker14.bindPopup("<b>Kilbree House B&B</b>").openPopup();
+
+var marker15 = L.marker([53.272040745612976, -9.054142260616631]).addTo(map);
+marker15.bindPopup("<b>The Snug Townhouse</b>").openPopup();
+
+var marker16 = L.marker([53.28350195045563, -9.036231560595807]).addTo(map);
+marker16.bindPopup("<b>Travellodge Plus Galway</b>").openPopup();
+
+var marker17 = L.marker([53.27867954227855, -9.014862160604068]).addTo(map);
+marker17.bindPopup("<b>Flannery's Hotel</b>").openPopup();
+
+
+    </script>
+
+    
+		
+
+</body>
+</html>
