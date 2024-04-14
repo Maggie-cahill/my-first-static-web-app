@@ -8,9 +8,9 @@
 }
 
 body{
-    display: flex;
+    /*display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-end;*/
     min-height: 100vh;
     background: #333;
 }

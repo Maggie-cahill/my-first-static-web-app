@@ -19,6 +19,7 @@ body{
 
 
 
+
 /* ----------------------------------- Shopping Items --------------------------------------------- */
 
 .body > div {
@@ -51,6 +52,14 @@ p {
 	
 }
 
+.ShopTitle {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.whole {
+    border-radius: 30px;
+}
 
 .ShopTitle h2{
     font-size: 3em;
@@ -131,8 +140,70 @@ p {
 	
 }
 
-.container > div > div {
-		border: 1px solid black;
+.scrollbar {
+    background-color: rgb(173, 0, 0);
+    width: 100%;
+}
+
+
+.scroll {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg,transparent, #fff 20%, #fff 80%, transparent);
+}
+
+
+
+.scroll div {
+    white-space:nowrap;
+    animation: animate var(--t) linear infinite;
+    animation-delay: calc(var(--t) * -1);
+}
+
+.scroll div:nth-child(2) {
+    animation: animate2 var(--t) linear infinite;
+    animation-delay: calc(var(--t) / -3);
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(-200%);
+    }
+}
+
+.Shop {
+    overflow: hidden;
+}
+
+.scroll div span {
+    display: inline-flex;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: rgb(173, 0, 0);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+
 }
 
 .buttons {
