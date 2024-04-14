@@ -57,6 +57,13 @@ p {
     border-top-right-radius: 30px;
 }
 
+.Shop {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 0;
+    padding-bottom: 100px;
+}
+
 .whole {
     border-radius: 30px;
 }
