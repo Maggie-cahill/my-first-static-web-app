@@ -86,31 +86,52 @@
 
 /* Body */
 
+.intro a {
+	text-decoration: none;
+	color: black;
+
+}
+
+.intro a:hover {
+	text-decoration: underline;
+  max-width: 100%;
+}
+
+
+
+.intro i {
+  font-size: 7px;
+  transform: translate(0px, -2px);
+}
+
 
 .textContent {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 50px;
-  column-gap: 30px;
+
+  
 
   display: flex;
+  margin-top: 60px;
 }
 
 .textContent .firstParagraph {
   flex-basis: 55%;
-
+  padding-left: 0;
+  padding-right: 40px;
   order: 1;
 }
 
 .textContent .secondParagraph {
   flex-basis: 100%;
-
+  padding-top: 40px;
   order: 3;
 }
 
 .parallax {
   background-position: center;
+  background-size: cover;
   transition: background-image .5s linear;
 
 	border:6px solid rgb(0, 57, 121);
@@ -132,12 +153,12 @@
 
 
 .glasan .parallax:hover {
-  background-image: url(../Images/Glasan.JPG);
+  background-image: url(../Images/glassan.png);
   background-size: cover;
 }
 
 .glasan .parallax {
-  background-image: url(../Images/glassan.png);
+  background-image: url(../Images/Glasan.JPG);
 
 }
 
@@ -205,22 +226,13 @@ p {
   
 }
 
-/*.sa img {
-	height: 27vw;
-	padding: 10px;
-	float: right;
-} */
 
-.intro a {
-	text-decoration: none;
-	color: black;
 
-}
 
-.intro a:hover {
-	text-decoration: underline;
-  max-width: 100%;
-}
+
+
+
+
 
 
 
@@ -409,6 +421,8 @@ footer{
 
 
 
+
+
 @media screen and (max-width: 5000px) {
 
 
@@ -442,9 +456,293 @@ footer{
 
 
   }
+  
+
+@media screen and (max-width: 1246px ) {
+
+.glasan .collage {
+  width: 90%;
+}
+
+/* --------------- Dunares Reviews ------------*/
+
+.dunares .collage {
+  width: 95%;
+  column-gap: 20px;
+  overflow: visible;
+  padding-left: 0;
+  padding-right: 0;
+}
 
 
-@media screen and (max-width: 900px) {
+
+.dunares #rev3Link {
+  width: 50%;
+  margin-left: -40px;
+}
+
+.dunares .rev1 {
+
+  z-index: 1;
+  max-width: 1000px;
+ 
+}
+
+.dunares #rev1Link {
+  margin: 0;
+  margin-top: 20px;
+  z-index: 6;
+  width: 40%;
+  max-width: 40%;
+}
+
+
+
+
+.dunares #rev2Link {
+  margin: 0;
+  margin-top: 40px;
+  margin-left: -40px;
+  width:45%;
+}
+
+.dunares .rev3 {
+padding: 20px;
+  
+}
+
+
+
+
+
+.dunares #rev4Link {
+  width: 50%;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: -80px;
+ 
+
+
+}
+
+.dunares .rev4 {
+  padding-bottom: 30px;
+  max-width: 100%;
+  padding-top: 10px;
+
+}
+
+.dunares #rev5Link {
+  width: 60%;
+  margin: 0;
+  margin-top: -100px;
+  margin-left: 200px;
+  z-index: 6;
+  
+}
+
+.dunares .rev5 {
+  max-width: 100%;
+  max-height: 20%;
+}
+
+/**
+* ? Slideshow
+**/
+
+.other {
+  padding: 0px;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.other .wrapper {
+  width: 70%;
+}
+
+
+
+
+
+
+  }
+
+@media screen and (max-width: 1035px) {
+
+
+/**
+* ? Reviews Section
+**/
+
+.collage {
+  width: 95%;
+}
+
+
+/* ------------------ Glasan Reviews ----------------- */
+
+
+#rev1Link {
+  width: 50%;
+  height: 40%;
+  margin-left: -100px;
+  z-index: 2; 
+}
+
+
+
+#rev2Link {
+  max-width: 55%;
+  height: 83%;
+  margin-left: 70px;
+  margin-right: -70px;
+  margin-bottom: -25px;
+  z-index: 5; 
+  
+}
+
+#rev3Link {
+  max-width: 100%;
+  width: 70%;
+  max-height: 40%;
+  margin-top: 30px;
+  margin-left: -40px;
+  margin-right:0px;
+  z-index: 1; 
+
+}
+
+
+#rev4Link {
+
+  max-width: 460px;
+ 
+  max-height: 40%;
+  margin-top: 60px;
+  margin-left: -40px;
+  z-index: 3; 
+ 
+}
+
+#rev5Link {
+
+  width: 60%;
+  max-height: 30%;
+  z-index: 6; 
+  margin-left: 0px;
+  margin-right: 300px;
+  margin-top: -100px;
+  z-index: 6;
+}
+
+/* --------------- Dunares Reviews ------------*/
+
+.dunares .collage {
+  width: 95%;
+  column-gap: 20px;
+  overflow: visible;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+.dunares #rev3Link {
+  width: 50%;
+  margin-left: -40px;
+}
+
+.dunares .rev1 {
+
+  z-index: 1;
+  max-width: 1000px;
+ 
+}
+
+.dunares #rev1Link {
+  margin: 0;
+  margin-top: 20px;
+  z-index: 6;
+  width: 40%;
+  max-width: 40%;
+}
+
+
+
+
+.dunares #rev2Link {
+  margin: 0;
+  margin-top: 40px;
+  margin-left: -40px;
+  width:45%;
+}
+
+.dunares .rev3 {
+padding: 20px;
+  
+}
+
+
+
+
+
+.dunares #rev4Link {
+  width: 50%;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: -80px;
+ 
+
+
+}
+
+.dunares .rev4 {
+  padding-bottom: 30px;
+  max-width: 100%;
+  padding-top: 10px;
+
+}
+
+.dunares #rev5Link {
+  width: 60%;
+  margin: 0;
+  margin-top: -100px;
+  margin-left: 200px;
+  z-index: 6;
+  
+}
+
+.dunares .rev5 {
+  max-width: 100%;
+  max-height: 20%;
+}
+
+/**
+* ? Slideshow
+**/
+
+.other {
+  padding: 0px;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.other .wrapper {
+  width: 70%;
+}
+
+
+
+.wrapper i:first-child {
+  left: -65px;
+}
+
+.wrapper i:last-child {
+  right: -65px;
+}
+
   .wrapper .carousel {
     grid-auto-columns: 95%;
   }
@@ -479,27 +777,717 @@ footer{
 
 }
 
+@media screen and (max-width:800px) {
+  /** 
+   * ? Description Section
+   * */
+
+     /* Header */
+
+     .sa {
+      padding: 15px;
+     }
+  
+     .sa h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-top: 10px;
+    
+     }
+  
+     .sa p {
+        font-size: .9em;
+        line-height: normal;
+        width: 100%;
+        padding: 10px;
+        
+  
+     }
+  
+     .textContent {
+      display: block;
+      margin-top: 20px;
+      padding: 20px;
+     }
+  
+     .parallax {
+      background-size: cover;
+      margin-bottom: 40px;
+      margin-top: 30px;
+  
+  
+      width: 80%;
+      height: 300px;
+      max-width: 100%;
+      max-height: 20%;
+      margin-left: auto;
+      margin-right: auto;
+    
+      border:2px solid rgb(0, 57, 121);
+      border-radius: 15px;
+    }
+
+    .textContent .firstParagraph {
+      padding-left: 15px;
+    }
+    
+
+
+    .table .td p {
+      font-size: 1.5em;
+      bottom: -10px;
+    }
+
+
+  /**
+  * ? Reviews
+  **/
+
+   /* Reviews */
+
+   .sa h2 {
+    font-size: 2.5em !important;
+  }
+
+  .sa p4 {
+    width: 100%;
+    height: 55px;
+    font-size: 12px;
+
+    padding: 20px;
+    padding-top: 10px;
+
+  
+
+  }
+
+
+
+  #link {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 60px;
+    overflow: visible;
+
+  
+  }
+
+
+  .reviews {
+    width: 100%;
+  }
+
+  .reviews .collage {
+    width: 80%;
+    display: block;
+    padding: 0;
+
+  }
+
+  .collage a {
+    width: 100%;
+    font-size: .5em; 
+  }
+
+  .dunares .collage {
+    overflow: visible;
+  }
+
+  .dunares .rev1 {
+    margin-bottom: 20px;
+  }
+
+  #rev1Link, .dunares #rev3Link{
+   
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    padding: 0;
+    
+
+    
+  }
+
+  .reviews a {
+    position: static;
+    
+  }
+
+  .review, .dunares .rev1  {
+    min-width: 5px;
+    width: 100% !important;
+    padding: 30px;
+  
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .review p {
+    padding: 0;
+    padding-top: 5px;
+    font-size: 1.3em;
+  }
+
+  .review ul span {
+    min-width: 10px;
+    min-height: 10px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+ #rev5Link {
+  margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    position: static;
+    padding: 0;
+    display: block;
+    width: 100%;
+ }
+
+ .dunares #rev5Link {
+  margin-left: auto;
+  margin-right: auto;
+  width:100%; 
+  margin-top: 25px;
+}
+
+
+
+  .review h2 {
+    font-size: 2em !important;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .review p2 {
+    margin-top: 15px;
+    font-size: 1.5em;
+ }
+
+ .review p3 {
+  font-size: 1.5em;
+}
+
+
+
+  .collage img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /**
+  * ? Slideshow
+  **/
+  .other {
+    padding: 0px;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .other .wrapper {
+    width: 70%;
+  }
+  
+
+  
+  .wrapper i:first-child {
+    left: -65px;
+  }
+  
+  .wrapper i:last-child {
+    right: -65px;
+  }
+
+
+}
+
 @media screen and (max-width: 600px) {
+
+  
+/** 
+   * ? Description Section
+   * */
+
+     /* Header */
+
+     .sa {
+      padding: 15px;
+     }
+  
+     .sa h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-top: 10px;
+    
+     }
+  
+     .sa p {
+        font-size: .9em;
+        line-height: normal;
+        width: 100%;
+        padding: 10px;
+        
+  
+     }
+  
+     .textContent {
+      display: block;
+      margin-top: 20px;
+     }
+  
+     .parallax {
+      background-size: cover;
+      margin-bottom: 30px;
+      margin-top: 30px;
+  
+  
+      width: 95%;
+      height: 260px;
+      max-width: 100%;
+      max-height: 20%;
+      margin-left: auto;
+      margin-right: auto;
+    
+      border:2px solid rgb(0, 57, 121);
+      border-radius: 15px;
+    }
+
+
+    .table .td p {
+      font-size: 1.5em;
+      bottom: -10px;
+    }
+
+
+      /* Reviews */
+
+  .sa h2 {
+    font-size: 2em !important;
+  }
+
+  .sa p4 {
+    width: 100%;
+    height: 45px;
+    font-size: 8px;
+
+    padding: 20px;
+    padding-top: 10px;
+
+  
+
+  }
+
+
+
+  #link {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 60px;
+    overflow: visible;
+
+  
+  }
+
+  .reviews {
+    width: 100%;
+  }
+
+  .reviews .collage {
+    width: 80%;
+    display: block;
+    padding: 0;
+
+  }
+
+  .collage a {
+    width: 100%;
+    font-size: .5em; 
+  }
+
+  .dunares .collage {
+    overflow: visible;
+  }
+
+  .dunares .rev1 {
+    margin-bottom: 20px;
+  }
+
+  #rev1Link, .dunares #rev3Link{
+   
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    padding: 0;
+    
+
+    
+  }
+
+
+  .reviews a {
+    position: static;
+    
+  }
+
+  .review, .dunares .rev1  {
+    min-width: 5px;
+    width: 100% !important;
+    padding: 30px;
+  
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .review p {
+    padding: 0;
+    padding-top: 5px;
+    font-size: 1.3em;
+  }
+
+  .review ul span {
+    min-width: 10px;
+    min-height: 10px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+ 
+
+
+
+  .review h2 {
+    font-size: 2em !important;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .review p2 {
+    margin-top: 15px;
+    font-size: 1.5em;
+ }
+
+ .review p3 {
+  font-size: 1.5em;
+}
+
+
+
+  .collage img {
+    width: 40px;
+    height: 40px;
+  }
+
+/**
+* ? Slideshow
+**/
+
+
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
 
   .carousel .card {
 	width: 100%;
+
   }
 
-  .wrapper i:first-child{
-	left: -65px;
-   
+  .carousel li .card {
+    min-width: 290px;
   }
-  .wrapper i:last-child{
-	right: -65px;
-  }
+
+
+.other {
+  padding: 0px;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.other .wrapper {
+  width: 90%;
+}
+
+.wrapper i {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 1em;
+}
+
+.wrapper i:first-child {
+  left: 5px;
+}
+
+.wrapper i:last-child {
+  right: 5px;
+}
 
 
 }
 
+@media screen and (max-width: 480px) {
+
+  .headImg {
+  
+    max-height: 400px;
+  }
+
+  .headerTitle {
+    margin-top: 30px;
+  }
+   /** 
+   * ? Intro
+   * */
+
+   .intro {
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    font-size: .8em;
+    line-height: normal;
+  }
+
+  .intro a {
+    font-size: .8em;
+  }
+
+  .quickLinks b {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+/** 
+   * ? Description Section
+   * */
+
+     /* Header */
+
+     .sa {
+      padding: 15px;
+     }
+  
+     .sa h1 {
+      font-size: 2em;
+      text-align: center;
+    
+     }
+  
+     .sa p {
+        font-size: .9em;
+        line-height: normal;
+        width: 100%;
+        padding: 10px;
+  
+     }
+  
+     .textContent {
+      display: block;
+     }
+  
+     .parallax {
+      background-size: cover;
+      margin-bottom: 20px;
+      margin-top: 30px;
+  
+  
+      width: 95%;
+      height: 170px;
+      max-width: 100%;
+      max-height: 20%;
+      margin-left: auto;
+      margin-right: auto;
+    
+      border:2px solid rgb(0, 57, 121);
+      border-radius: 15px;
+    }
+
+
+
+  /* Reviews */
+
+  .sa h2 {
+    font-size: 2em !important;
+  }
+
+
+  .sa p4 {
+    width: 100%;
+    height: 45px;
+    font-size: 8px;
+
+    padding: 20px;
+    padding-top: 10px;
+
+  
+
+  }
+
+
+
+  #link {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 60px;
+    overflow: visible;
+
+  
+  }
+
+  .reviews {
+    width: 100%;
+  }
+
+  .reviews .collage {
+    width: 100%;
+    display: block;
+    padding: 0;
+
+  }
+
+  .collage a {
+    width: 100%;
+    font-size: .5em; 
+  }
+
+  .dunares .collage {
+    overflow: visible;
+  }
+
+  .dunares .rev1 {
+    margin-bottom: 20px;
+  }
+
+  #rev1Link, .dunares #rev3Link{
+   
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    padding: 0;
+    
+
+    
+  }
+
+  .reviews a {
+    position: static;
+    
+  }
+
+  .review, .dunares .rev1  {
+    min-width: 5px;
+    width: 100% !important;
+    padding: 15px;
+  
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .review p {
+    padding: 0;
+    padding-top: 5px;
+    font-size: 1em;
+  }
+
+  .review ul span {
+    min-width: 10px;
+    min-height: 10px;
+
+    width: 15px;
+    height: 15px;
+  }
+
+ 
+
+
+
+  .review h2 {
+    font-size: 1.7em !important;
+    margin-bottom: 5px;
+  }
+
+  .review p2 {
+    margin-top: 15px;
+ }
+
+
+
+  .collage img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .td p {
+    font-size: 1.5em;
+    bottom: -10px;
+  }
+    
+/**
+* ? Slideshow
+**/
+
+.other {
+  padding: 0px;
+  width:100%;
+}
+
+.other .wrapper {
+  width: 100%;
+}
+
+.wrapper i {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 1em;
+}
+
+.wrapper i:first-child {
+  left: 5px;
+}
+
+.wrapper i:last-child {
+  right: 5px;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+  .other {
+    display: none;
+  }
+  .container > div {
+    padding: 0;
+  }
+
+}
+
 @media screen and (max-width: 320px) {
+
+  .container > div {
+    padding: 0;
+  }
   .headerTitle {
     font-size: 20px;
   }
@@ -536,23 +1524,23 @@ footer{
 
 
    /** 
-   * ? Glasan Section
+   * ? Description Section
    * */
 
      /* Header */
 
-   .glasan {
+   .sa {
     padding: 15px;
    }
 
-   .glasan h1 {
+   .sa h1 {
     font-size: 2em;
     text-align: center;
   
    }
 
-   .glasan p {
-      font-size: .5em;
+   .sa p {
+      font-size: .9em;
       line-height: normal;
       width: 100%;
       padding: 10px;
@@ -563,7 +1551,7 @@ footer{
     display: block;
    }
 
-   .glasan .parallax {
+   .parallax {
     background-size: cover;
     margin-bottom: 20px;
     margin-top: 30px;
@@ -583,26 +1571,33 @@ footer{
 
   /* Reviews */
 
-  .glasan h2 {
+  .sa h2 {
     font-size: 2em !important;
   }
+
 
   .sa p4 {
     width: 100%;
     height: 45px;
     font-size: 8px;
-    padding: 5px;
-    padding: 8px;
+
+    padding: 20px;
+    padding-top: 10px;
+
+  
 
   }
+
+
 
   #link {
     display:block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 50px;
-    overflow: hidden;
+    width: 65%;
+    height: 60px;
+    overflow: visible;
+
   
   }
 
@@ -610,7 +1605,7 @@ footer{
     width: 100%;
   }
 
-  .collage {
+  .reviews .collage {
     width: 100%;
     display: block;
     padding: 0;
@@ -622,17 +1617,32 @@ footer{
     font-size: .5em; 
   }
 
-  #rev1Link{
+  .dunares .collage {
+    overflow: visible;
+  }
+
+  .dunares .rev1 {
+    margin-bottom: 20px;
+  }
+
+  #rev1Link, .dunares #rev3Link{
+   
     width:100%;
     margin-left: auto;
     margin-right: auto;
     position: static;
     padding: 0;
+    
 
     
   }
 
-  .review  {
+  .reviews a {
+    position: static;
+    
+  }
+
+  .review, .dunares .rev1  {
     min-width: 5px;
     width: 100% !important;
     padding: 15px;
@@ -674,11 +1684,14 @@ footer{
     height: 40px;
   }
 
+  .td p {
+    font-size: 1.5em;
+    bottom: -10px;
+  }
 
 
-/**
-* ? Room Types 
-**/
+
+
 
 
 

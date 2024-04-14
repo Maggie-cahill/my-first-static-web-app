@@ -81,6 +81,7 @@
   scroll-snap-align: center;
   height: 342px;
   width: 400px;
+  min-width: 290px;
   list-style: none;
   background: #fff;
   cursor: pointer;
@@ -88,6 +89,10 @@
   flex-direction: column;
   border-radius: 8px;
 
+}
+
+.carousel a {
+  min-width: 290px;
 }
 .carousel .card .img {
   background: #8B53FF;

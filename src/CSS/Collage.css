@@ -13,7 +13,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 60%;
+    width: 80%;
     height: 60%;
     padding: 25px;
     margin-left: auto;
@@ -29,6 +29,8 @@
     box-shadow: 2px 1px 6px black;
     min-width: 250px;
     max-width: 500px;
+
+    
 }
 
 .review:hover {
@@ -139,7 +141,7 @@
 
 
 
-
+/*-------------- Glasan Reviews --------------------*/
 
 
 #rev1Link {
@@ -162,12 +164,13 @@
 }
 
 #rev3Link {
+
     max-width: 45%;
     max-height: 40%;
-    margin-top: 10px;
-    margin-left: -180px;
-    margin-right: 50px;
-    z-index: 1; 
+    margin-top: 20px;
+    margin-left: -110px;
+    margin-right: 22px;
+    z-index: 1;
   
 }
 
@@ -184,12 +187,12 @@
     width: 30%;
     height: 30%;
     z-index: 6; 
-    margin-left: 40px;
-    margin-right: -45px;
+    margin-left: -10px;
+    margin-right: 0px;
     margin-top: 15px;
 }
 
-
+/* -------------- Dunares Reviews ---------------------- */
 
 .dunares .collage {
     width: 95%;
@@ -220,11 +223,6 @@
     width: 30%;
 }
 
-.dunares .rev2 {
-
-    
-    
-}
 
 
 .dunares #rev2Link {
@@ -235,12 +233,8 @@
 
 .dunares .rev3 {
   padding: 20px;
-  
     
  }
-
-
-
 
 
 .dunares #rev4Link {
@@ -261,7 +255,7 @@
 }
 
 .dunares #rev5Link {
-    width: 40%;
+    width: 50%;
     margin: 0;
     margin-top: -100px;
     margin-left: 400px;
@@ -272,6 +266,20 @@
 .dunares .rev5 {
     max-width: 100%;
     max-height: 20%;
+}
+
+.dunares .rev2 ul span {
+    border: 2px solid green;
+    background-color: green;
+}
+
+.dunares .rev1 ul span {
+    background-color: white;
+}
+
+.dunares .rev1 ul span:first-of-type, .dunares .rev1 ul span:nth-of-type(2) {
+    border: 2px solid green;
+    background-color: green;
 }
 
 /* ------ Corrib -------- */
@@ -329,8 +337,17 @@
 }
 
 .review div {
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 0;
     overflow-y: hidden;
-    height: 40%;
+    max-height: 200px;
+}
+
+.review div p {
+    padding: 0px;
+    margin: 0;
+
 }
 
 .rev1 ul span {
@@ -370,83 +387,11 @@
     background-color: white;
 }
 
-.dunares .rev2 ul span {
-    border: 2px solid green;
-    background-color: green;
-}
 
-.dunares .rev1 ul span {
-    background-color: white;
-}
 
-.dunares .rev1 ul span:first-of-type, .dunares .rev1 ul span:nth-of-type(2) {
-    border: 2px solid green;
-    background-color: green;
-}
+
 
 /*
-@media screen and (min-width:1025px) {
-    #rev1Link {
-        max-width: 50%;
-        height: 5%;
-        margin-left: -100px;
-        z-index: 2; 
-    }
-    
-    
-    
-    #rev2Link {
-        max-width: 55%;
-        height: 83%;
-        margin-left: 70px;
-        margin-right: -70px;
-        margin-bottom: -25px;
-        z-index: 5; 
-        
-    }
-    
-    #rev3Link {
-        max-width: 45%;
-        max-height: 40%;
-        margin-top: 10px;
-        margin-left: -180px;
-        margin-right: 50px;
-        z-index: 1; 
-      
-    }
-    
-    #rev4Link {
-        max-width: 35%;
-        max-height: 40%;
-        margin-top: -35px;
-        margin-left: -10px;
-        z-index: 3; 
-       
-    }
-    
-    #rev5Link {
-        max-width: 30%;
-        height: 30%;
-        z-index: 6; 
-        margin-left: 40px;
-        margin-right: -45px;
-        margin-top: 15px;
-    }
-    
-    .rev3 {
-        margin-left: -15px;
-        padding-top: 10px;
-        width: 100%;
-        padding-right: 60px;
-      
-    }
-
-    #readMore {
-        visibility: hidden;
-    }
-
-}
-
 @media screen and (min-width:1024px) {
     #readMore {
         visibility: hidden;
