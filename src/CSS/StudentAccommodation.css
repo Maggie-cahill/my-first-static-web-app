@@ -93,8 +93,11 @@
 }
 
 .intro a:hover {
-	text-decoration: underline;
+  color: grey;
+	
   max-width: 100%;
+
+  transition: color .2s ease;
 }
 
 
