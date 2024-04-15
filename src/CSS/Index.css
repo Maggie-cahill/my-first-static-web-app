@@ -7,20 +7,20 @@
     font-family: "Poppins",sans-serif;
 }
     body{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        min-height: 100vh;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
-
     }
 
 
+.videoDiv {
 
-  video {
+  background-color: grey;
+  width: 100%;
+}
+  #video {
     display: block;
-    margin: auto;
+    height:auto;
+    width: 100%;
   }
 
