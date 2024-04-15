@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.everything{
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #061de3, #e306ca);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 300px;
+    padding-top: 200px;
+    min-height: 100vh;
+   
+}
+
+.container{
+    width: 350px;
+    height: 500px;
+    perspective: 800;
+}
+
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front{
+    background-image: url(../Images/WoodQuay.png);
+    background-position: center;
+    background-size:cover;
+}
+
+.back{
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+a:link {
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  .container1{
+    width: 350px;
+    height: 500px;
+    perspective: 800;
+}
+
+.container1:hover > .card1{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front1,
+.back1{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front1{
+    background-image: url(../Images/NestBoutique.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.back1{
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.container2{
+    width: 350px;
+    height: 500px;
+    perspective: 800;
+}
+
+.container2:hover > .card2{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front2,
+.back2{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front2{
+    background-image: url(../Images/SleepZone.JPG);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.back2{
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.container3{
+    width: 350px;
+    height: 500px;
+    perspective: 800;
+}
+
+.container3:hover > .card3{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front3,
+.back3{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front3{
+    background-image: url(../Images/Snoozles.JPG);
+    background-position: center;
+    background-size: 350px 500px;
+}
+
+.back3{
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.container4{
+    width: 350px;
+    height: 500px;
+    perspective: 800;
+}
+
+.container4:hover > .card4{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card4{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front4,
+.back4{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front4{
+    background-image: url(../Images/GalwayCityHostel.JPG);
+    background-position: center;
+    background-size: 350px 500px;
+}
+
+.back4{
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.container5{
+    width: 350px;
+    height: 500px;
+    perspective: 800;
+}
+
+.container5:hover > .card5{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card5{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front5,
+.back5{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front5{
+    background-image: url(../Images/385513645.jpg);
+    background-position: center;
+    background-size: 350px 500px;
+}
+
+.back5{
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.container6{
+    width: 350px;
+    height: 500px;
+    perspective: 800;
+}
+
+.container6:hover > .card6{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card6{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front6,
+.back6{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front6{
+    background-image: url(../Images/385513645.jpg);
+    background-position: center;
+    background-size: 350px 500px;
+}
+
+.back6{
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
