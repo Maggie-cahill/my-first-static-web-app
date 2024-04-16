@@ -53,6 +53,19 @@
    
   }
 
+  .navbar ul {
+    display:flex
+  }
+
+  .navbar .hamburger {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+
+
+
 .logo{
     height: 100px;
 	width: 120px;
@@ -100,6 +113,8 @@
    margin-left: 40px;
 }
 
+
+
 .navbar a::before{
    content: '';
    position: absolute;
@@ -124,7 +139,7 @@ span {
     font-size: 25px;
 }
 
-.cartAmount {
+.cartAmount, .cartAmount2 {
     position: absolute;
     top: -25px;
     right: -25px;
@@ -146,5 +161,95 @@ span {
 i {
     cursor: pointer;
  }
+
+ /* Dropdown Menu */
+
+
+ .dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(0,0,0,.95);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+
+ .dropdown_menu.open {
+    height: 350px;
+    font-size: .5em;
+    border: 2px solid white;
+    margin-top: 60px;
+
+ }
+
+
+ .dropdown_menu a {
+    list-style-type: none;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+}
+
+ .dropdown_menu li {
+    padding: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+ }
+
+
+
+
+
+ /* Responsive Design */
+
+ @media(max-width:1095px) {
+    .navbar .hamburger {
+        display: block;
+    }
+
+  
+    .navbar ul {
+        display:none;
+      }
+
+      .dropdown_menu {
+        display: block;
+      }
+
+      .cartAmount2 {
+        position: absolute;
+        top: -20px;
+        right: -30px;
+        font-size: 17px;
+        font-family:  tahoma;
+        padding: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .cartIcon i {
+        font-size: 1.4em;
+    }
+ }
+
+ @media(max-width:576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+ }
+ 
  
 

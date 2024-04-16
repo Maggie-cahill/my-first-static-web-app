@@ -7,12 +7,29 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 
 
+
 let calculation = () => {
     let cartIcon = document.getElementById("cartAmount");
+    let cartIcon2 = document.getElementById("cartAmount2");
     cartIcon.innerHTML = (basket.map((x)=>x.item).reduce((x, y)=>x+y,0 ));
+    cartIcon2.innerHTML = (basket.map((x)=>x.item).reduce((x, y)=>x+y,0 ));
 };
 
 calculation();
+
+
+const hamburger = document.querySelector('.hamburger')
+const hamburgerIcon = document.querySelector('.hamburger i')
+const dropDownMenu = document.querySelector('.dropdown_menu')
+		
+		hamburger.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+		
+			hamburgerIcon.classList = isOpen
+			? "fa-solid fa-x"
+			: "fa-solid fa-bars"
+}
 
 
 let generateCartItems = ()=> {
