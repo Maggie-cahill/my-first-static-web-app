@@ -135,3 +135,10 @@ footer .wave#wave4{
 }
 
 
+@media(max-width:768px) {
+    footer .menu {
+        display: block;
+        text-align: center;
+    }
+}
+
