@@ -1,8 +1,56 @@
+
+
+
+var slideIndex = 1;
+var t;
+
+showSlides(slideIndex);
+
+function plusSlides(n) {    
+  slideIndex = slideIndex + n;
+  clearTimeout(t);
+  showSlides(slideIndex);
+  console.log(slideIndex);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+
+  var i;
+  var slides = document.getElementsByClassName("card");
+
+  if (n == undefined) {
+    n = ++slideIndex;
+  }
+
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  t = setTimeout(showSlides, 3000);
+}
+
+/*
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const carouselChildrens = [...carousel.children];
+
+
+const cards = {one,two,three}
 
 let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 
@@ -29,8 +77,11 @@ arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
     });
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id == "right" ? firstCardWidth : -firstCardWidth;
+    });
 });
-
+/*
 const dragStart = (e) => {
     isDragging = true;
     carousel.classList.add("dragging");
@@ -60,7 +111,7 @@ const infiniteScroll = () => {
         carousel.classList.remove("no-transition");
     }
     // If the carousel is at the end, scroll to the beginning
-    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+    else if(carousel.scrollLeft === 0) {
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.offsetWidth;
         carousel.classList.remove("no-transition");
@@ -78,9 +129,6 @@ const autoPlay = () => {
 }
 autoPlay();
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
+wrapper.addEventListener("mouseleave", autoPlay);*/
