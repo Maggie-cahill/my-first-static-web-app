@@ -24,3 +24,46 @@
     width: 100%;
   }
 
+
+.welcome {
+  display: none;
+}
+
+.container {
+  min-width: 220px;
+
+}
+
+@media screen and (max-width:1330px) {
+  .videoDiv {
+    margin-top: 120px;
+    width:auto;
+    
+  }
+
+  .header {
+    background-color:black;
+  }
+
+  .welcome {
+    display:flex;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-align: center;
+    background: linear-gradient(#64d9e6, #9198e5);
+    color: white;
+    border-top: 5px solid white;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  
+
+  .welcome {
+    font-size: 1.5em;
+  }
+}
+
