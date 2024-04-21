@@ -4,37 +4,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Hotels</title>
+
     <link rel="stylesheet" href="CSS/Hotels.css"> 
+    <link rel="stylesheet" href="CSS/navbar1.css">
+
+
 	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+ 
 	
 </head>
+	
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0J36QQZ623"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0J36QQZ623');
+</script>
+
+                         
+
+	
 <body>
 
-         <header class="header">
+ 
+  <header class="header">
 		 
-            <a href="#" class="logo">LOGO</a>
-            
-            <nav class="navbar">
-                <a href="Index.html"><b>Home</b></a>
-                <a href="StudentAccommodation.html"><b>Student Accommodation</b></a>
-                <a href="Hotels.html"><b>Hotels</b></a>
-                <a href="Hostels.html"><b>Hostels</b></a>
-				<a href="NightLife.html"><b>Night life</b></a>
-                <a href="Shop.html"><b>Shop</b></a>
-				
-            </nav>
-        </header>
+    <a href="index.html" class="logo" id = "logo" onmousemove = "activateLogo()" onmouseout = "deactivateLogo()">  <img src = "Images/Logo2.png"> </a>
+    
+    <nav class="navbar">
+        <ul class = "pages">
+            <li> <a href="index.html"><b>Home</b></a></li>
+            <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
+            <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
+            <li> <a href="Hostels.html"><b>Hostels</b></a></li>
+            <li> <a href="NightLife.html"><b>Night life</b></a> </li>
+            <li> <a href="Shop.html"><b>Shop</b></a></li>
+            <li>   <div class="cartIcon">
+                <a href = "Cart.html"><i class="fas fa-shopping-cart" style = "font-size: 20px"></i></a>
+                    <div id = "cartAmount" class = "cartAmount" > 0</div>
+                    
+            </div></li>
+        </ul>
+
+<div class="hamburger">
+  <i class="fa-solid fa-bars" style = "color: white;"></i>
+</div>
+
+</nav>
+<div class="dropdown_menu">
+<li> <a href="index.html"><b>Home</b></a></li>
+            <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
+            <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
+            <li> <a href="Hostels.html"><b>Hostels</b></a></li>
+            <li> <a href="NightLife.html"><b>Night life</b></a> </li>
+            <li> <a href="Shop.html"><b>Shop</b></a></li>
+            <li>   <div class="cartIcon">
+                <a href = "Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <div id = "cartAmount2" class = "cartAmount2" > 0</div>
+                    
+            </div></li>
+</div>
+</header>
+
+
 		<div class="container">
-		<h1>Introduction</h1>
-		<div id="box">
-		<p id="bold">Welcome to our Hotels page!<br>
-		 We hope that you find everything you are looking for and more.<br>
-		 We understand that sometimes it is difficult to get permanent accomodation, so we have selected<br> 
-          a few places in Galway for you to stay at which are not incredibly expensive.<br>
-			We recognise that a hotel is no place for a permanent stay but if you are in need of accomodation for <br>
-			a few nights, these are some places you could visit.<br>
-			We hope you enjoy your stay!</p>
-		</div>
+      
+      <div class="counter"> <!-- hitwebcounter Code START -->
+        <!-- hitwebcounter Code START -->
+          <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=12685044&style=0009&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                                                      
+      </div>
+      <br> <br> <br>
+      <div class="image-container">
+        
+      
+      <h1>Introduction</h1>
+      <div id="box">
+      <p id="bold">Welcome to our Hotels page!<br>
+       We hope that you find everything you are looking for and more.<br>
+       We understand that sometimes it is difficult to get permanent accomodation, so we have selected<br> 
+            a few places in Galway for you to stay at which are not incredibly expensive.<br>
+        We recognise that a hotel is no place for a permanent stay but if you are in need of accomodation for <br>
+        a few nights, these are some places you could visit.<br>
+        We hope you enjoy your stay!</p>
+      </div>
+    </div>
+      
+  
 		        <h1>Black Cat</h1>
 				<p >179 Upper Salthill, Salthill, Galway, Ireland</p>
         <div class="image-container" id="image-container1">
@@ -339,32 +400,40 @@
 		
 		</div>
 		<div id="map"></div>
-		 <footer>
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
-            </div>
-            <ul class="social_icon">
-                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="#">Night life</a></li>
-                <li><a href="#">Hostels</a></li>
-                <li><a href="#">Shops</a></li>
-            </ul>
-            <p>©2024 All rights reserved.</p>
-        </footer>
-        
+		<footer>
+      <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+          <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="https://ie.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="#"></a></li>
+      </ul>
+      <ul class="menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="StudentAccommodation.html">Student Accomodation</a></li>
+          <li><a href="Hostels.html">Hostels</a></li>
+          <li><a href="Hotels.html">Hotels</a></li>
+          <li><a href="NightLife.html">Night Life</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+      </ul>
+      <p>©2024 All rights reserved.</p>
+  </footer>
+
+
+    <script src="JS/ShoppingCartIcon.js"></script>
 		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 		<script>
+
+      
 var map = L.map('map').setView([53.274345, -9.049228], 13);
 
 // Add a tile layer (you can use different tile providers)
@@ -425,9 +494,9 @@ var marker17 = L.marker([53.27867954227855, -9.014862160604068]).addTo(map);
 marker17.bindPopup("<b>Flannery's Hotel</b>").openPopup();
 
 
-</script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </script>
+
+    
 		
 
 </body>
