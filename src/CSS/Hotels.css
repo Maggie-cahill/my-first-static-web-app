@@ -18,6 +18,10 @@ body{
 
 }
 
+.everything {
+width: 100%;
+}
+
 #map span {
  color: black;
 
