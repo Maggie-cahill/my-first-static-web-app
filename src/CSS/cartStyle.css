@@ -1270,7 +1270,87 @@
     
         
     }
+
+@media screen and (max-width: 1250px) {
+    .EmptyCartText {
+        margin-left: 400px;
+    }
+
+    .EmptyCartText h2 {
+        font-size: 1.1em;
+    }
+
+    #label {
+        margin-left: initial;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .EmptyCartImg img {
+        width: auto;
+        height: 250px;
+    }
+
+    .EmptyCartText {
+        margin-left: 10px;
+    }
+
+    .EmptyCartText h2 {
+        font-size: 1em;
+    }
+
+    #label {
+        margin-left: auto;
+  
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .EmptyCartImg img {
+        width: auto;
+        height: 250px;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .EmptyCartImg {
+        float: none;
+    }
+
+    .EmptyCartText {
+        margin-left: 0;
+        width: 100%;
+  
+    }
+
+    .EmptyCartText h2 {
+        font-size: 1em;
+       text-align: center;
+    }
+
+    .shopButton {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    #label {
+        margin-left: auto;
+  
+    }
+}
+
+
 @media screen and (max-width: 315px) {
+
+
+
 
 /**
 * ? Cart Title STYLING 
