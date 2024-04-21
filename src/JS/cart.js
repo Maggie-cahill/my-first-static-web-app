@@ -92,7 +92,7 @@ let generateCartItems = ()=> {
         }).join(""))
         
     }else {
-        label.style = "width: 80%;";
+       
 
        cartTitle.innerHTML = ``;
        ShoppingCart.innerHTML = ``;
