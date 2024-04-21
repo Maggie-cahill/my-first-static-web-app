@@ -162,7 +162,7 @@ body{
  
   .parallax1{
  
-  background-image: URL("../Images/seven.jpg");
+  background-image: URL("../Images/Seven.JPG");
 
   
   min-height: 500px; 
@@ -190,7 +190,7 @@ body{
 
  .parallax2 {
  
-  background-image: URL("../Images/buskers.jpg");
+  background-image: URL("../Images/Buskers.JPG");
 
  
   min-height: 500px; 
@@ -208,7 +208,7 @@ body{
 
 .parallax3 {
  
-  background-image: URL("../Images/Skeff.jpg");
+  background-image: URL("../Images/Skeff.JPG");
 
   
   min-height: 500px;
@@ -225,7 +225,7 @@ body{
 
 .parallax4 {
  
-  background-image: URL("../Images/anpucan.jpg");
+  background-image: URL("../Images/AnPucan.JPG");
 
  
   min-height: 500px; 
@@ -242,7 +242,7 @@ body{
 
 .parallax5 {
  
-  background-image: URL("../Images/Monroes.jpg");
+  background-image: URL("../Images/Monroes.JPG");
 
  
   min-height: 500px; 
@@ -259,7 +259,7 @@ body{
 
 .parallax6 {
  
-  background-image: URL("../Images/Walsh.jpg");
+  background-image: URL("../Images/Walsh.JPG");
 
  
   min-height: 500px; 
