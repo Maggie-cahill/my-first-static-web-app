@@ -244,6 +244,12 @@ i {
     }
  }
 
+ @media(max-width: 720px) {
+    .counter {
+        display:none;
+    }
+ }
+
  @media(max-width:576px) {
     .dropdown_menu {
         left: 2rem;
