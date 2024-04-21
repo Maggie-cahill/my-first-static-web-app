@@ -88,7 +88,7 @@ body{
 	  margin-left: 250px;
 	  margin-right:250px;
 	  display: grid;
-	  width:800px;
+	  width:100%;
 	  margin:65px auto;
 	  
   }
@@ -258,7 +258,7 @@ img:hover {
 
 @media screen and (min-width: 1020px) {
 	.container{
-	  width:60%;
+	  width:100%;
 	  
 	 
   }
@@ -280,7 +280,7 @@ img:hover {
     }
 	
 		.container{
-	  width:800px;
+	  width:100%;
 	  
 		}
   
