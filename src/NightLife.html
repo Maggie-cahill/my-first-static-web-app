@@ -3,87 +3,31 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Galway Student Oasis - Night Life</title>
-
-<link rel="stylesheet" href="CSS/NightLife.css"> 
-<link rel="stylesheet" href="footer/footer.css">
-<link rel="stylesheet" href="CSS/navbar1.css">
-
+<link rel="stylesheet" href="NightLife.css"> 
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<header class="header">
 
-
-
+            <a href="#" class="logo">LOGO</a>
+            
+            <nav class="navbar">
+                <a href="Index.html"><b>Home</b></a>
+                <a href="StudentAccommodation.html"><b>Student Accommodation</b></a>
+                <a href="Hotels.html"><b>Hotels</b></a>
+                <a href="Hostels.html"><b>Hostels</b></a>
+				<a href="NightLife.html"><b>Night life</b></a>
+                <a href="Shop.html"><b>Shop</b></a>
+				
+				
+			
+            </nav>
+        </header>
 <style>
 
 </style>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0J36QQZ623"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0J36QQZ623');
-</script>
-
-                    
-
-
-	
 <body>
 
-
 <div class = 'container'>
-
-
-
-  <header class="header">
-		 
-    <a href="index.html" class="logo" id = "logo" onmousemove = "activateLogo()" onmouseout = "deactivateLogo()">  <img src = "Images/Logo2.png"> </a>
-    
-    <nav class="navbar">
-        <ul class = "pages">
-            <li> <a href="index.html"><b>Home</b></a></li>
-            <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
-            <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
-            <li> <a href="Hostels.html"><b>Hostels</b></a></li>
-            <li> <a href="NightLife.html"><b>Night life</b></a> </li>
-            <li> <a href="Shop.html"><b>Shop</b></a></li>
-            <li>   <div class="cartIcon">
-                <a href = "Cart.html"><i class="fas fa-shopping-cart" style = "font-size: 20px"></i></a>
-                    <div id = "cartAmount" class = "cartAmount" > 0</div>
-                    
-            </div></li>
-        </ul>
-
-<div class="hamburger">
-  <i class="fa-solid fa-bars" style = "color: white;"></i>
-</div>
-
-</nav>
-<div class="dropdown_menu">
-<li> <a href="index.html"><b>Home</b></a></li>
-            <li> <a href="StudentAccommodation.html"><b>Student Accommodation</b></a></li>
-            <li> <a href="Hotels.html"><b>Hotels</b></a> </li>
-            <li> <a href="Hostels.html"><b>Hostels</b></a></li>
-            <li> <a href="NightLife.html"><b>Night life</b></a> </li>
-            <li> <a href="Shop.html"><b>Shop</b></a></li>
-            <li>   <div class="cartIcon">
-                <a href = "Cart.html"><i class="fas fa-shopping-cart"></i></a>
-                    <div id = "cartAmount2" class = "cartAmount2" > 0</div>
-                    
-            </div></li>
-</div>
-</header>
-
-<div class="counter"> <!-- hitwebcounter Code START -->
-  <!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=12685044&style=0009&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                                                      
-</div>
-
 <h1>Introduction</h1>
 <p class="box">Hello and Welcome to the Galway Night Life Page!<br>
    We are happy to share with you some of the best and most popular places to visit in Galway<br>
@@ -91,11 +35,9 @@
    can tell you for sure that these are great places, and surely at least one will suit your going out needs!<br>
    We hope you enjoy your stay in Galway and we hope you visit these cool areas at least once, just to have <br>
    a taste of the Galway Night Life experience. </p>
-
-
 <h1>Seven</h1>
 
-<a href="https://sevenbridgestreet.ie/"><div class="parallax1"></div></a>
+<a href="https://sevenbridgestreet.ie/"><div class="parallax" id="parallax1"></div></a>
 
 
 
@@ -110,7 +52,7 @@
 				friends.</p>
 </div>
 <h2> Buskers</h2>
-<a href="https://www.buskerbrownes.com/"><div class="parallax2"></div></a>
+<a href="https://www.buskerbrownes.com/"><div class="parallax" id="parallax2"></div></a>
 
 <div>
 
@@ -121,7 +63,7 @@
 				this is the place to be.</p>
 </div>
 <h3>Skeff</h3>
-<a href="https://www.theskeff.ie"><div class="parallax3"></div></a>
+<a href="https://www.theskeff.ie"><div class="parallax"  id="parallax3"></div></a>
 
 <div>
 
@@ -132,19 +74,19 @@
 				Buses run until around half 11pm so if you live somewhere not directly  
 				in the city you would be able to have a nice time and still catch the last bus :)</p>
 </div>
-<h4>An Pucan</h4>   
-<a href="https://anpucan.ie"><div class="parallax4"></div></a>
+<h4>An Púcán</h4>   
+<a href="https://anpucan.ie"><div class="parallax"  id="parallax4"></div></a>
 
 <div>
 
-				<p class="box">An Pucan is a lovely and fancy bar right in the center of Galway City.
+				<p class="box">An Púcán is a lovely and fancy bar right in the center of Galway City.
                It has an outdoor/indoor smoking area with fake grass covering the floor. <br>
 				It is a bit pricey so beware but the enviornment is beautiful and 
 				definetly worth a visit!</p>
 
 </div>
 <h5>Monroes</h5>
-<a href="https://monroes.ie"><div class="parallax5"></div></a>
+<a href="https://monroes.ie"><div class="parallax" id="parallax5"></div></a>
 
 <div>
 
@@ -156,7 +98,7 @@
 				from the bar. Open fire and comfortable enviornment definetly worth a visit!</p>
 </div>
 <h6>MP Walsh</h6>
-<a href="https://mpwalsh.ie"> <div class="parallax6"></div></a>
+<a href="https://mpwalsh.ie"> <div class="parallax"  id="parallax6"></div></a>
 
 <div>
 	
@@ -172,38 +114,38 @@
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 5</div>
-  <img src="Images/FrontDoor.JPG" style="width:100%">
+  <img src="frontdoor.jpg" style="width:100%">
   <div class="text">The Front Door</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 5</div>
-  <img src="Images/McGettigans.JPG" style="width:100%">
+  <img src="McGettigans.jpg" style="width:100%">
   <div class="text">McGettigans</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 5</div>
-  <img src="Images/merlin.jpg" style="width:100%">
+  <img src="merlin.jpg" style="width:100%">
   <div class="text">Merlins</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 5</div>
-  <img src="Images/kingshead.jpg" style="width:100%">
-  <div class="text">The Kings Head</div>
+  <img src="thekingshead.jpg" style="width:100%">
+  <div class="text">The KingsHead</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5 / 5</div>
-  <img src="Images/sult.jpg" style="width:100%">
+  <img src="thesult.jpg" style="width:100%">
   <div class="text">Sult</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
 
-
+</div>
 <br>
 
 <div style="text-align:center">
@@ -213,41 +155,34 @@
   <span class="dot" onclick="currentSlide(4)"></span>
   <span class="dot" onclick="currentSlide(5)"></span>
 </div>
-</div>
 
+</div>
 <div id="map"></div>
-
 <footer>
-  <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-  </div>
-  <ul class="social_icon">
-      <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
-      <li><a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></li>
-      <li><a href="https://ie.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-      <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-      <li><a href="#"></a></li>
-  </ul>
-  <ul class="menu">
-      <li><a href="Index.html">Home</a></li>
-      <li><a href="StudentAccommodation.html">Student Accomodation</a></li>
-      <li><a href="Hostels.html">Hostels</a></li>
-      <li><a href="Hotels.html">Hotels</a></li>
-      <li><a href="NightLife.html">Night Life</a></li>
-      <li><a href="Shop.html">Shop</a></li>
-  </ul>
-  <p>©2024 All rights reserved.</p>
-</footer>
-
-</div>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Night life</a></li>
+                <li><a href="#">Hostels</a></li>
+                <li><a href="#">Shops</a></li>
+            </ul>
+            <p>©2024 All rights reserved.</p>
+        </footer>
 
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
 let slideIndex = 1;
@@ -320,9 +255,7 @@ marker11.bindPopup("<b>Sult</b>").openPopup();
 </script>
 
 
-        
-        <script src = "JS/ShoppingCartIcon.js"></script>
-	<script type="text/javascript">(function(){d=document;s=d.createElement("script");s.src="https://widget.supportai.com/c9f6c721a8760a9.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </html>
